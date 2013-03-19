@@ -8,7 +8,7 @@ assert_eq([nijiconf.BR], entire_doc.forge(['']))
 
 assert_list_eq([
     'A' + nijiconf.BR,
-    nijiconf.MONO_BLOCK_BEGIN,
+    nijiconf.MONO_BLOCK_BEGIN % '',
     '$ this' + nijiconf.BOLD_BEGIN + 'mono' + nijiconf.BOLD_END + 'line' + nijiconf.BR,
     'another' + nijiconf.BOLD_BEGIN + 'mono' + nijiconf.BOLD_END + 'line' + nijiconf.BR,
     nijiconf.MONO_BLOCK_END,
@@ -53,7 +53,7 @@ assert_list_eq([
     nijiconf.UL_BEGIN,
     nijiconf.LI_BEGIN + 'this bullet' + nijiconf.LI_END,
     nijiconf.UL_END,
-    nijiconf.MONO_BLOCK_BEGIN,
+    nijiconf.MONO_BLOCK_BEGIN % '',
     'end' + nijiconf.BR,
     nijiconf.MONO_BLOCK_END,
 ], entire_doc.forge([

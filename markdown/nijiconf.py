@@ -14,11 +14,11 @@ BOLD_END = '''</strong>'''
 ITALIC_BEGIN = '''<i class='ntitalic'>'''
 ITALIC_END = '''</i>'''
 
-STROKE_BEGIN = '''<s class='ntstroke'>'''
-STROKE_END = '''</s>'''
+STROKE_BEGIN = '''<del class='ntdel'>'''
+STROKE_END = '''</del>'''
 
-MONO_BEGIN = '''<tt><code class='ntinlinecode'>'''
-MONO_END = '''</code></tt>'''
+MONO_BEGIN = '''<code class='ntinlinecode'>'''
+MONO_END = '''</code>'''
 
 LINK_BEGIN = '''<a href='%s' class='ntlink'>'''
 LINK_END = '''</a>'''
@@ -44,11 +44,11 @@ H2_END = '</h2>'
 H3_BEGIN = '''<h3 class='nth3'>'''
 H3_END = '</h3>'
 
-MONO_BLOCK_BEGIN = '''<p class='ntblockcode'><tt><code>'''
-MONO_BLOCK_END = '</code></tt></p>'
+MONO_BLOCK_BEGIN = '''<div class='ntblockcode'><code class='prettyprint%s'>'''
+MONO_BLOCK_END = '</code></div>'
 
-AA_BEGIN = '''<p class='ntaa'><tt><code>'''
-AA_END = '</code></tt></p>'
+AA_BEGIN = '''<p class='ntaa'><code>'''
+AA_END = '</code></p>'
 
 TABLE_BEGIN = '''<table class='nttable'>'''
 TABLE_END = '</table>'

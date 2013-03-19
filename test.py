@@ -10,6 +10,10 @@ print '=== test table'
 from markdown import test_table
 print '=== pass'
 
+print '=== test code block'
+from markdown import test_code_block
+print '=== pass'
+
 print '=== test ascii art'
 from markdown import test_aa
 print '=== pass'
